@@ -10,10 +10,10 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import "./style.css";
-import notebg from "../../../assets/note_bg.png";
+
+// import notebg from "../assets/note_bg.png";
 import { useDispatch } from "react-redux";
-import { deleteNotes, updateNotes } from "../../../Redux/notes/note.actions";
+import { deleteNotes, updateNotes } from "../Redux/notes/note.actions";
 import {
   Modal,
   ModalOverlay,
@@ -41,7 +41,7 @@ export default function NoteCard({ title, body, user, _id }) {
   };
 
   return (
-    <Card backgroundImage={`url(${notebg})`}>
+    <Card backgroundColor={"cyan"}>
       <CardBody>
         <VStack>
           <Heading>{title}</Heading>

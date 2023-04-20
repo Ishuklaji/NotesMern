@@ -1,14 +1,12 @@
-import { useEffect } from "react"
-import { useSelector } from "react-redux"
-import LoginPage from "../pages/LoginPage"
+import { useSelector } from "react-redux";
+import LoginPage from "../pages/LoginPage";
 
-export default function PrivateRoute({children}){
+export default function PrivateRoute({ children }) {
+  const { auth } = useSelector((state) => state.userReducer);
 
-    const {auth} = useSelector((state)=>state.userReducer)
+  if (auth) {
+    return children;
+  }
 
-    if(auth){
-            return children
-        }
-
-    return <LoginPage></LoginPage>
+  return <LoginPage></LoginPage>;
 }

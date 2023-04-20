@@ -10,7 +10,6 @@ export const getUser = (obj) => async (distpatch) => {
         let data = await axios(BASE_URL + "/user/login", {
             method: "post",
             data: obj
-
         })
         let { message, token, status } = data.data
         if (status == 1) {
@@ -18,7 +17,6 @@ export const getUser = (obj) => async (distpatch) => {
         } else {
             alert(message)
             distpatch({ type: LOGIN_USER_ERROR })
-
         }
 
     } catch (error) {

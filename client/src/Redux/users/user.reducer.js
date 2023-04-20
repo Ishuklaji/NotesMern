@@ -15,7 +15,6 @@ export default function userReducer(state = initialState, action) {
     switch (type) {
 
         case LOGIN_USER_LOADING: {
-
             return {
                 ...state, loading: true
             }

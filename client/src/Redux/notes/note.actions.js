@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useSelector } from "react-redux"
-import { BASE_URL } from "../../constants/config"
+import { BASE_URL } from "../../config/config"
 import { store } from "../store"
 import { LOGOUT } from "../users/user.types"
 import { CREATE_NOTES_ERROR, CREATE_NOTES_LOADING, CREATE_NOTES_SUCCESS, DELETE_NOTES_ERROR, DELETE_NOTES_LOADING, DELETE_NOTES_SUCCESS, GET_NOTES_ERROR, GET_NOTES_LOADING, GET_NOTES_SUCCESS, UPDATE_NOTES_ERROR, UPDATE_NOTES_LOADING, UPDATE_NOTES_SUCCESS } from "./note.types"
