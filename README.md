@@ -9,6 +9,9 @@
 
 **Database:** Mongo DB
   
+## Pseudo UI design for reference
+<https://www.canva.com/design/DAFgpLcxX2Y/ek9UG9jMPQAizfdWDuhQeA/edit?utm_content=DAFgpLcxX2Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton/>
+  
 ## Demo
 
 <https://notesmern.netlify.app/>
