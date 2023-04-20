@@ -1,1 +1,1 @@
-export const BASE_URL = "https://notesapp-jymn.onrender.com"
+export const BASE_URL = "https://nice-gray-coyote-cuff.cyclic.app/"
